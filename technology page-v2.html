@@ -3,26 +3,81 @@
         <title>Technologies</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <link type="text/css" rel="stylesheet" href="css/boostrap-theme.css"> 
+        <link type="text/css" rel="stylesheet" href="css/bootstrap-theme.css"> 
         <link type="text/css" rel="stylesheet" href="css/bootstrap.css"> 
         <link type="text/css" rel="stylesheet" href="css/custom-style.css">  
     </head>
-    <body>  
+    <body class="technopage"> 
+          <!-- SCM Music Player http://scmplayer.net -->
+<script type="text/javascript" src="http://scmplayer.net/script.js" 
+data-config="{'skin':'http://static.tumblr.com/sbxkdxg/yBhmpl793/coffporbau-de-incertezas.css','volume':50,'autoplay':false,'shuffle':false,'repeat':1,'placement':'bottom','showplaylist':false,'playlist':[{'title':'Love Never Felt So Good ','url':'http://www.youtube.com/watch?v=oG08ukJPtR8'},{'title':'Somewhere over the rainbow','url':'http://www.youtube.com/watch?v=3BeKhlUzPUc'},{'title':'Happy','url':'http://www.youtube.com/watch?v=y6Sxv-sUYtM'},{'title':'It%27s Not Unusual','url':'http://www.youtube.com/watch?v=yca2BCwAnBQ'},{'title':'Chocolate High ','url':'http://www.youtube.com/watch?v=MHuzXuRskSE'}]}" ></script>
+<!-- SCM Music Player script end -->
         <header>
-        <nav> 
-            <a href="index.html" class="btn-defult btn-lg active" role="button">Index</a> 
-            <a href="Projects.html" class="btn-defult btn-lg active" role="button">Projects</a> 
-            <a href="technology page-v2.html" class="btn-defult btn-lg active" role="button">Technologies</a>
-        </nav>  
+            <nav>  
+                <div class="dropdown">
+                    <a href="index.html" class="btn-defult btn-lg active" role="button">Index</a> 
+                    <a href="Projects.html" class="btn-defult btn-lg active" role="button">Projects</a>
+                    <a id="Techno" href="technology page-v2.html" data-toggle="dropdown" class="btn-defult btn-lg active" role="button"> 
+                        Technologies<span class="caret"></span> 
+                    </a> 
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="Techno"> 
+                        <li><a href="http://www.w3schools.com">HTML Info</a></li>
+                        <li><a href="http://www.htmldog.com">CSS Info</a></li>
+                        <li><a href="http://getbootstrap.com">Bootstrap Info</a></li>
+                        <li class="divider"></li>
+                        <li><a href="http://www.codecademy.com">Learn to Code</a></li> 
+                        <li><a href="http://www.theappacademy.us">APP Academy</a></li>
+                    </ul>  
+                </div>
+            </nav>         
         </header> 
         <article>  
-            <h1> Technology used for this Web site</h1> 
-                    <h2>HTML</h2> 
-                    <p>HTML or HyperText Markup Language is a standard system for tagging text files to accomplish  web sites on the Internet.</p> 
-                        <h3>CSS</h3>
-                        <p>CSS or Cascading Style Sheets is a style sheet language used for describing the look and formatting of a document written in a markup language. </p> 
-                        <h3>Bootstrap</h3>    
-                        <p>Bootstrap is a technique of loading a program into a computer by means of a few initial instructions that enable the introduction of the rest of the program from an input device. </p>
-        </article>
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                Description of HTML
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            Fill in later.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                Description of CSS
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Fill in later.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+          Description of Bootstrap
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse">
+      <div class="panel-body">
+       Fill in later.
+      </div>
+                </div>
+                </div>
+            </div>  
+        </article> 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
     </body>
 </html>
